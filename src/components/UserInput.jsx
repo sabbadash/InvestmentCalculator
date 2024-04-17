@@ -1,4 +1,4 @@
-export default function UserInput({ onChange /*, userInput*/ }) {
+export default function UserInput({ onChange, userInput }) {
   return (
     <form id="user-input">
       <div className="input-group">
@@ -8,7 +8,7 @@ export default function UserInput({ onChange /*, userInput*/ }) {
             type="number"
             required
             id="initialInvestment"
-            //value={userInput.initialInvestment}
+            value={userInput.initialInvestment}
             onChange={onChange}
           />
         </p>
@@ -18,7 +18,7 @@ export default function UserInput({ onChange /*, userInput*/ }) {
             type="number"
             required
             id="annualInvestment"
-            //value={userInput.annualInvestment}
+            value={userInput.annualInvestment}
             onChange={onChange}
           />
         </p>
@@ -30,7 +30,7 @@ export default function UserInput({ onChange /*, userInput*/ }) {
             type="number"
             required
             id="expectedReturn"
-            //value={userInput.expectedReturn}
+            value={userInput.expectedReturn}
             onChange={onChange}
           />
         </p>
@@ -40,7 +40,7 @@ export default function UserInput({ onChange /*, userInput*/ }) {
             type="number"
             required
             id="duration"
-            //value={userInput.duration}
+            value={userInput.duration}
             onChange={onChange}
           />
         </p>
