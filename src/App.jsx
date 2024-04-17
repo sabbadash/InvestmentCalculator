@@ -14,7 +14,8 @@ const INVEST_INFO = {
 function App() {
   const [data, setData] = useState(INVEST_INFO);
 
-  function handleChange(id, value) {
+  function handleChange(event) {
+    const { id, value } = event.target;
     setData((prevData) => ({
       ...prevData,
       [id]: value,
@@ -25,8 +26,8 @@ function App() {
   return (
     <>
       <Header />
-      <UserInput onChange={handleChange} />
-      <Result data={data} />
+      <UserInput userInput={data} onChange={handleChange} />
+      <Result userInput={data} />
     </>
   );
 }
