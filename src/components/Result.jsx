@@ -62,8 +62,8 @@ export default function Result({ userInput }) {
         </table>
       </div>
       <div className="chart-container">
-        <InvestmentPieChart chartData={chartData} />
         <InvestmentBarChart chartData={annualData} />
+        <InvestmentPieChart chartData={chartData} />
       </div>
     </div>
   );

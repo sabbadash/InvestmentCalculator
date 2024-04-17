@@ -97,5 +97,6 @@ body {
 
 .chart-container {
   flex: 1;
-  margin-left: 20px; /* Adjust margin for spacing */
+  margin-left: 10px; /* Adjust margin for spacing */
+  margin-top: 65px;
 }
