@@ -86,3 +86,16 @@ body {
 .center {
   text-align: center;
 }
+
+.result-container {
+  display: flex;
+}
+
+.result {
+  flex: 1;
+}
+
+.chart-container {
+  flex: 1;
+  margin-left: 20px; /* Adjust margin for spacing */
+}
