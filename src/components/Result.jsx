@@ -1,5 +1,7 @@
 import { calculateInvestmentResults, formatter } from "../util/investment.js";
 import InvestmentPieChart from "./InvestmentPieChart";
+import InvestmentBarChart from "./InvestmentBarChart";
+import { PieChart } from "recharts";
 
 export default function Result({ userInput }) {
   const annualData = calculateInvestmentResults(userInput);
@@ -23,6 +25,7 @@ export default function Result({ userInput }) {
     { name: "Total Contributions", value: totalContributions },
     { name: "Interest", value: Math.floor(totalInterest * 100) / 100 },
   ];
+
   console.log(annualData);
   return (
     <div className="result-container">
@@ -60,6 +63,7 @@ export default function Result({ userInput }) {
       </div>
       <div className="chart-container">
         <InvestmentPieChart chartData={chartData} />
+        <InvestmentBarChart chartData={annualData} />
       </div>
     </div>
   );

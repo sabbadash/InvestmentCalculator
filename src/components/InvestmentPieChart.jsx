@@ -9,7 +9,7 @@ export default function InvestmentPieChart({ chartData }) {
           isAnimationActive={true}
           data={chartData}
           cx="50%"
-          cy="37%"
+          cy="35%"
           outerRadius={80}
           fill="#8884d8"
           label
